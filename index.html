@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+          <section class="right">
+            <div class="header__logo"><a href="#">DreamJob</a></div>
+          </section>
+          <section class="left">
+            <div class="header__searchBar">
+              <div href="#" class="header__searchBar--search-icon">
+                <i class="fas fa-search  fa-2x"> </i>
+              </div>
+              <input
+                type="text"
+                class="header__searchBar--search-text"
+                placeholder="Search here"
+              />
+            </div>
+            <div class="header__basket">
+              <div class="header__basket--sketch">
+                <div class="sketch">
+                  <i class="fas fa-shopping-bag fa-2x"></i
+                  ><span class="sketch-number"><p id="numberOfItems"></p></span>
+                </div>
+                <div class="sketch-content">
+                  <span id="price">0</span>
+                  <p id="sketch-content">p</p>
+                </div>
+              </div>
+            </div>
+            <div class="header__language">
+              <select
+                name="language"
+                id="selectLanguage"
+                class="header__language--dropdown"
+              >
+                <option value="En">en</option>
+                <option value="Ru">ru</option>
+                <option value="spa">spa</option>
+              </select>
+              <div class="arrow"></div>
+            </div>
+          </section>
+        </div>
+      </header>
+      <section class="products container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="products__card slided" id="0" >
+                    <div class="products__card--product-area">
+                      <div class="galery">
+                          <img src="./img/converse-blue-front.jpg" alt="converse front" class="galery__image-1">
+                          <img src="./img/converse-blue-side.jpg" alt="converse side" class="galery__image-2">
+                          <img src="./img/converse-blue-back.jpg" alt="converse back" class="galery__image-3">
+                      </div>
+                      <div class="image-area">
+                            <img src="img/converse-blue-front.jpg" alt="Very cool men's converse">
+                            <div class="slider-dots">
+                                <div class="dot dot1"></div>
+                                <div class="dot dot2"></div>
+                                <div class="dot dot3"></div>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="products__card--name-area">
+                      <div class="products__card--name-area--prodName" id="name"><p>Very cool men's converse</p></div>
+                        <div class="products__card--name-area--price">
+                            <span id="price">485</span>
+                            <p>p.</p>
+                    </div>
+                    </div>
+                    <div class="products__card--slided-button-area">
+                      <a
+                        type="button"
+                        class="buying__button"
+                        id="startAddingButton=0"
+                        href="#buyingSetup-0"
+                      ><p>Начать оформление</p></a>
+                      <div class="buying__setup" id="buyingSetup-0">
+                        <div class="buying__setup--trash" id="deleteItem"><i class="fas fa-trash"></i></div>
+                        <div class="buying__setup--spinner" id="spin"><i class="fas fa-sync-alt"></i></div>
+                        <div class="buying__setup--quantity">
+                          <span id="quantityOfProduct">1</span>
+                          <p>шт.</p>
+                        </div>
+                        <div class="buying__setup--plus" id="addProduct"><i class="fas fa-plus"></i></div>
+                        <div class="buying__setup--complete-button"><p>Оформить</p></div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="products__card discounted" id="1">
+                    <div class="products__card--product-area">
+                        <div class="image">
+                            <img src="./img/vans-black-front.jpg" alt="Vans for women">
+                        </div>
+                        <div class="slider-dots">
+                            <div class="dot dot1"></div>
+                            <div class="dot dot2"></div>
+                            <div class="dot dot3"></div>
+                        </div>
+                      </div>
+                      <div class="products__card--name-area">
+                        <span class="name" id="name">Vans for women very comfy and beautiful</span>
+                        <div class="price">
+                            <p class="price__discounted">2150p.</p>
+                            <div class="price__undiscounted">
+                                <span id="price">485</span>
+                                <p>p.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="products__card--slided-button-area">
+                        <a
+                          type="button"
+                          class="buying__button"
+                          id="startAddingButton=1"
+                          href="#startAdding-1"
+                        >
+                        <p>Начать оформление</p>
+                      </a>
+                        <div class="buying__setup" id="startAdding-1">
+                          <div class="buying__setup--trash" id="deleteItem"><i class="fas fa-trash"></i></div>
+                          <div class="buying__setup--spinner"><i class="fas fa-sync-alt"></i></div>
+                          <div class="buying__setup--quantity">
+                            <span id="quantityOfProduct">1</span>
+                            <p>шт.</p>
+                          </div>
+                          <div class="buying__setup--plus" id="addProduct"><i class="fas fa-plus"></i></div>
+                          <div class="buying__setup--complete-button"><p>Оформить</p></div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="products__card slided" id="2" >
+                    <div class="products__card--product-area">
+                      <div class="galery">
+                          <img src="./img/converse-blue-front.jpg" alt="converse front" class="galery__image-1">
+                          <img src="./img/converse-blue-side.jpg" alt="converse side" class="galery__image-2">
+                          <img src="./img/converse-blue-back.jpg" alt="converse back" class="galery__image-3">
+                      </div>
+                      <div class="image-area">
+                            <img src="img/converse-blue-front.jpg" alt="Very cool men's converse">
+                            <div class="slider-dots">
+                                <div class="dot dot1"></div>
+                                <div class="dot dot2"></div>
+                                <div class="dot dot3"></div>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="products__card--name-area">
+                      <div class="products__card--name-area--prodName" id="name"><p>Very cool men's converse</p></div>
+                        <div class="products__card--name-area--price">
+                            <span id="price">485</span>
+                            <p>p.</p>
+                    </div>
+                    </div>
+                    <div class="products__card--slided-button-area">
+                      <a
+                        type="button"
+                        class="buying__button"
+                        id="startAddingButton=2"
+                        href="#buyingSetup-2"
+                      ><p>Начать оформление</p></a>
+                      <div class="buying__setup" id="buyingSetup-2">
+                        <div class="buying__setup--trash" id="deleteItem"><i class="fas fa-trash"></i></div>
+                        <div class="buying__setup--spinner" id="spin"><i class="fas fa-sync-alt"></i></div>
+                        <div class="buying__setup--quantity">
+                          <span id="quantityOfProduct">1</span>
+                          <p>шт.</p>
+                        </div>
+                        <div class="buying__setup--plus" id="addProduct"><i class="fas fa-plus"></i></div>
+                        <div class="buying__setup--complete-button"><p>Оформить</p></div>
+                      </div>
+                    </div>
+                  </div>
+            </div> 
+              
+            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <div class="products__card discounted" id="3">
+                    <div class="products__card--product-area">
+                        <div class="image">
+                            <img src="./img/vans-black-front.jpg" alt="Vans for women">
+                        </div>
+                        <div class="slider-dots">
+                            <div class="dot dot1"></div>
+                            <div class="dot dot2"></div>
+                            <div class="dot dot3"></div>
+                        </div>
+                      </div>
+                      <div class="products__card--name-area">
+                        <span class="name" id="name">Vans for women very comfy and beautiful</span>
+                        <div class="price">
+                            <p class="price__discounted">2150p.</p>
+                            <div class="price__undiscounted">
+                                <span id="price">485</span>
+                                <p>p.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="products__card--slided-button-area">
+                        <a
+                          type="button"
+                          class="buying__button"
+                          id="startAddingButton=3"
+                          href="#startAdding-3"
+                        >
+                        <p>Начать оформление</p>
+                      </a>
+                        <div class="buying__setup" id="startAdding-3">
+                          <div class="buying__setup--trash" id="deleteItem"><i class="fas fa-trash"></i></div>
+                          <div class="buying__setup--spinner"><i class="fas fa-sync-alt"></i></div>
+                          <div class="buying__setup--quantity">
+                            <span id="quantityOfProduct">1</span>
+                            <p>шт.</p>
+                          </div>
+                          <div class="buying__setup--plus" id="addProduct"><i class="fas fa-plus"></i></div>
+                          <div class="buying__setup--complete-button"><p>Оформить</p></div>
+                        </div>
+                      </div>
+                  </div>
+            </div>  
+              
+        </div>
+      </section>
+      <link
+      href="https://fonts.googleapis.com/css?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+    ></script>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
